@@ -1,0 +1,33 @@
+body {
+  padding: 20px;
+
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.menu {
+  margin-bottom: 20px;
+}
+.crud_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+#dark-mode-toggle{
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 30px;
+}

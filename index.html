@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD App</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="crud_wrapper">
+        <h1>CRUD App+</h1>
+        <button id="dark-mode-toggle">Dark🌗</button>
+      </div>
+      <div class="menu">
+        <select id="user-select" class="form-control">
+          <option value="all-users">All Users👤</option>
+          <option value="user-1">User-1</option>
+          <option value="user-2">User-2</option>
+          <option value="user-3">User-3</option>
+        </select>
+      </div>
+      <form id="person-form">
+        <div class="form-group">
+          <label for="name-input">Name:</label>
+          <input type="text" class="form-control" id="name-input" required />
+        </div>
+        <div class="form-group">
+          <label for="age-input">Age:</label>
+          <input type="number" class="form-control" id="age-input" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Save✅</button>
+        <button type="button" class="btn btn-secondary" id="cancel-button">
+          Cancel❌
+        </button>
+      </form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
